@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.dependecy_injection.MainViewModel" />
+            type="com.example.depency_injection.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(viewModel.counter)}"
+            android:text="@{String.valueOf(viewModel.counter.get())}"
             android:textSize="54sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

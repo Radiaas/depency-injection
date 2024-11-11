@@ -1,4 +1,4 @@
-package com.example.dependecy_injection
+package com.example.depency_injection
 
 import android.content.Context
 
@@ -7,9 +7,7 @@ class SaveCounter(context: Context) {
 
     var counter: Int
         get() = pref.getInt(COUNTER, 0)
-        set(value) {
-            pref.edit().putInt(COUNTER, value).apply()
-        }
+        set(value) = pref.edit().putInt(COUNTER, value).apply()
 
     companion object {
         const val PREF_NAME = "data-counter"
